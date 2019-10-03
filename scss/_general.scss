@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+9.0 General/Global Styles
+--------------------------------------------------------------*/
+body{
+	background: $white;
+	margin: 0;
+}
+// Style highlight to match our themes colors
+::-moz-selection{
+		background: rgba( 182, 174, 140, .5);
+}
+::selection{
+		background: rgba( 182, 174, 140, .5);
+}
+::-ms-selection{
+	background: rgba( 182, 174, 140, .5);
+}
+#privacyPolicy{
+	@include breakpoint(smallScreen){
+			margin-top: 110px;
+	}
+	@include breakpoint(largeMobileScreen){
+			margin-top: 125px;
+	}
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
