@@ -49,27 +49,12 @@
 			color: $white;
     }
 }
-.buttonWrapper {
-
-}
 .plainLink {
 	text-decoration: none;
 	color: $brandColor;
+	font-weight: 700;
 	-webkit-transition: .2s ease;
 	transition: .2s ease;
-	&:after {
-		width: 0;
-	}
-	&:hover{
-		color: $brandColor;
-		-webkit-transition: .2s ease;
-		transition: .2s ease;
-		#redArrow{
-			margin-left: 10px;
-			-webkit-transition: .2s ease;
-			transition: .2s ease;
-		}
-	}
 }
 .centerButton{
 	margin: 0 auto;
@@ -99,34 +84,6 @@ button{
           -ms-flex-direction: row;
               flex-direction: row;
     }
-}
-#fld_7908577_1{
-  position: relative;
-	z-index:1;
-	text-decoration: none;
-  font-family: $cabin;
-	font-weight: 700;
-  font-size: 16px;
-  text-transform: uppercase;
-	border: 2px solid $brandColor;
-	border-radius: 10px;
-	background: $brandColor;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-	color: $white;
-	-webkit-transition: .2s ease all;
-	transition: .2s ease all;
-  padding: 10px 20px 10px 20px;
-	cursor: pointer;
-		&:hover{
-			-webkit-transition: .2s ease all;
-			transition: .2s ease all;
-      background: $brandColor;
-      border: 2px solid $brandColor;
-      transition: .2s ease all;
-			box-shadow: 0 6px 18px 0 rgba(0,0,0,.5);
-		}
 }
 .noDecoration {
 	&:after {

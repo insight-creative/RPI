@@ -23,6 +23,18 @@
   stroke: $white;
   fill: $white;
 }
+.largeArrow{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  stroke-width: 0;
+  stroke: $white;
+  fill: $white;
+	@include breakpoint (tabletScreen) {
+		width: 50px;
+		height: 50px;
+	}
+}
 .mediumBlackIcon{
   display: inline-block;
   width: 25px;
