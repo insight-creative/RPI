@@ -6,19 +6,13 @@
 	z-index: 2;
 	width: 100%;
 	margin: 0 auto;
-	background-color: $black;
-	a {
-		&:after {
-			width: 0;
-		}
-	}
+	background-image: url('http://q0o.1b4.myftpupload.com/wp-content/uploads/2019/10/rpi-plastic-lumber-background-1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .footerContent{
 	padding: 0;
-	background-image: url('/wp-content/uploads/2019/09/fire-background-1.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom center;
 	@include breakpoint (tabletScreen) {
 		padding: 20px;
 	}
@@ -28,18 +22,15 @@
 		max-width: 600px;
 	}
 }
-#footerContentInner {
-	justify-content: space-between;
-	position: relative;
-	background-color: $black;
-	padding: 20px 0;
-	@include breakpoint (laptopScreen) {
-		padding: 20px;
-		top: -50px;
-	}
-}
-#footerContentBottom {
-	padding-bottom: 100px;
+#footerLogo {
+  display: flex;
+  justify-content: flex-end;
+  .custom-logo-link {
+    img {
+			max-width: 75px;
+			height: auto;
+		}
+  }
 }
 #copyright{
 	color: $white;
@@ -60,89 +51,16 @@
           -ms-flex-direction: row;
               flex-direction: row;
     }
+		a:first-of-type {
+			margin-left: 10px;
+		}
 		a {
-			margin: 0 5px;
+			color: $white;
+			margin-right: 5px;
 		}
-}
-.footerLinkWrap {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-}
-#FooterMenu {
-	-webkit-margin-before: 0;
-	        margin-block-start: 0;
-  -webkit-padding-start: 0;
-     -moz-padding-start: 0;
-          padding-inline-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-	li{
-		list-style-type: none;
-		a{
-			font-family: $cabin;
-			font-size: 16px;
-			-webkit-transition: .2s ease;
-			transition: .2s ease;
-			&:hover{
-				color: $white;
-				-webkit-transition: .2s ease;
-				transition: .2s ease;
-			}
-		}
-	}
-}
-.socialWrapper{
-	margin: 20px 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	@include breakpoint (laptopScreen) {
-		margin: 0;
-	}
-	img {
-		margin: 20px auto 0;
-		width: 30%;
-		@include breakpoint (largeMobileScreen) {
-			width: 20%;
-		}
-		@include breakpoint (laptopScreen) {
-			width: 60%;
-		}
-		@include breakpoint (extraLargeScreen) {
-			width: 40%;
-		}
-	}
-}
-#social {
-	margin-top: 10px;
 }
 #footerContent {
-	background-color: $black;
-	padding: 20px;
-}
-#brandLogos {
+	padding: 10px;
 	display: flex;
-	flex-direction: row;
-	margin-top: 10px;
-	justify-content: flex-start;
-	img {
-		width: auto;
-		height: 30px;
-		margin: 0 10px;
-		@include breakpoint (largeMobileScreen) {
-			height: 50px;
-		}
-		@include breakpoint (tabletScreen) {
-			height: 60px;
-		}
-	}
+	align-items: center;
 }

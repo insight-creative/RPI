@@ -1,4 +1,4 @@
-<div id="copyright" class="pageWidth">
+<div id="copyright" class="col50">
   <svg class="smallIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<defs>
 			<symbol id="icon-copyright" viewBox="0 0 24 28">
@@ -8,7 +8,7 @@
 		</defs>
 	</svg>
 	<svg class="icon icon-copyright"><use xlink:href="#icon-copyright"></use></svg>
-  <p>&nbsp;<script>document.write(new Date().getFullYear());</script> <?php printf( get_bloginfo ( 'name' ) ); ?><br /></p>
+  <p>&nbsp;<script>document.write(new Date().getFullYear());</script> <?php printf( get_bloginfo ( 'name' ) ); ?> All rights reserved.</p>
   <a href="#"> Privacy Policy </a>
   <a href="#"> Sitemap </a>
   <a href="/contact-us/"> Contact Us </a>
