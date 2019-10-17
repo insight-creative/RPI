@@ -17,6 +17,7 @@
 	transition: .3s ease;
 	cursor: pointer;
   white-space: nowrap;
+	box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
   &:hover{
     background: $white;
   	color: $brandColor;

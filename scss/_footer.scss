@@ -57,6 +57,11 @@
 		a {
 			color: $white;
 			margin-right: 5px;
+			transition: .2s ease;
+			&:hover {
+				color: $lightGrey;
+				transition: .2s ease;
+			}
 		}
 }
 #footerContent {

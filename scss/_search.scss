@@ -42,7 +42,7 @@
   text-align: center;
   padding: 10px;
   display: block;
-  background-color: $black;
+  background-color: $white;
   @include breakpoint (laptopScreen) {
     display: none;
   }
@@ -78,17 +78,19 @@
     width: 20%;
     padding: 10px;
   }
+  .mediumIcon {
+    stroke: $black;
+    fill: $black;
+  }
+  @include breakpoint (laptopScreen) {
+    display: none;
+  }
 }
 .searchOpen {
   display: block !important;
 }
 #search {
   padding: 0 10px;
-}
-#mobileSearch {
-  @include breakpoint (laptopScreen) {
-    display: none;
-  }
 }
 .searchForm {
 	background-color: $brandColor;

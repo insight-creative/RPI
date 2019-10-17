@@ -26,6 +26,7 @@
   	transition: .3s ease;
   	cursor: pointer;
     white-space: nowrap;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
     &:hover{
       background: $white;
     	color: $brandColor;
@@ -34,6 +35,9 @@
     }
   }
 }
+.gfield_label {
+  font-size: 18px !important;
+}
 #contact {
   .col50 {
     @include breakpoint (laptopScreen) {
@@ -41,37 +45,14 @@
     }
   }
 }
-.caldera-grid label, .awsm-job-form-inner label{
-  color: #000000 !important;
-  font-family: $cabin;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.field_required{
-  color: $brandColor !important;
-}
-.CF5ce5ba5c3f551 input[type=text], .CF5ce5ba5c3f551 input[type=email],
-#fld_8239328_1, #fld_7683514_1{
-  box-shadow: 2px 2px 5px rgba(42, 42, 42, 0.3);
-}
-#CF5d2cc0bea8332_1-row-1 {
-  input {
-    box-shadow: 2px 2px 5px rgba(42, 42, 42, 0.3);
-  }
-}
-.caldera-grid a {
-  text-decoration: none !important;
-}
-.caldera-grid .breadcrumb>.active, .caldera-grid .breadcrumb>.active>a {
-  color: $brandColor !important;
-}
-.caldera-grid a:focus, .caldera-grid a:hover {
-  color: $brandColor !important;
-}
-.cf-page-btn-next {
-  float: right;
-}
 .formWrapper{
   padding: 20px;
-  background-color: $lightGrey;
+  border: 1px solid $lightGrey;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.smallMapWrapper {
+  @include breakpoint (laptopScreen) {
+    margin-top: -100px;
+  }
 }

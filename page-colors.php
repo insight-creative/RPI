@@ -5,7 +5,6 @@
 get_header();
 
 ?>
-<div id="gg-screen" hidden></div>
 <div id="primary" class="content-area">
 	<main id="home" class="site-main">
 		<section id="colorHero">
@@ -18,66 +17,17 @@ get_header();
 			<div class="pageWidth limitWidth paddedSection">
 				<?php the_field('color_description'); ?>
 			</div>
-			<div class="pageWidth centerText">
-				<h2>Naturals</h2>
-			</div>
-			<div class="gg-box pageWidth wrappedFlexContainer paddedSection colorGrid">
-				<?php if( have_rows('natural_colors') ): ?>
-							<?php while( have_rows('natural_colors') ): the_row();
-							$imageID = get_sub_field('natural_color_option')['ID'];
-							echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-							endwhile;
-						endif;
-				?>
-			</div>
-			<div class="pageWidth centerText">
-				<h2>Vivids</h2>
-			</div>
-			<div class="gg-box pageWidth wrappedFlexContainer paddedSection colorGrid">
-				<?php if( have_rows('vivid_colors') ): ?>
-							<?php while( have_rows('vivid_colors') ): the_row();
-							$imageID = get_sub_field('vivid_color_option')['ID'];
-							$imageClass = get_sub_field('image_class');
-							echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'last', 'data-sizes' => 'auto' ) );
-							endwhile;
-						endif;
-				?>
-			</div>
-			<div class="pageWidth centerText">
-				<h2>Pastels</h2>
-			</div>
-			<div class="gg-box pageWidth wrappedFlexContainer paddedSection colorGrid">
-				<?php if( have_rows('pastel_colors') ): ?>
-							<?php while( have_rows('pastel_colors') ): the_row();
-							$imageID = get_sub_field('pastel_color_option')['ID'];
-							echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-							endwhile;
-						endif;
-				?>
-			</div>
-			<div class="pageWidth centerText">
-				<h2>Neutrals</h2>
-			</div>
-			<div class="gg-box pageWidth wrappedFlexContainer paddedSection colorGrid">
-				<?php if( have_rows('neutral_colors') ): ?>
-							<?php while( have_rows('neutral_colors') ): the_row();
-							$imageID = get_sub_field('neutral_color_option')['ID'];
-							echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-							endwhile;
-						endif;
-				?>
-			</div>
-			<div class="pageWidth centerText">
-				<h2>Surface Options</h2>
-			</div>
-			<div class="gg-box pageWidth wrappedFlexContainer paddedSection colorGrid">
-				<?php if( have_rows('surface_options') ): ?>
-							<?php while( have_rows('surface_options') ): the_row();
-							$imageID = get_sub_field('surface_options_textures')['ID'];
-							echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-							endwhile;
-						endif;
-				?>
+			<?php get_template_part('/inc/lightbox/naturals'); ?>
+			<?php get_template_part('/inc/lightbox/vivids'); ?>
+			<?php get_template_part('/inc/lightbox/pastels'); ?>
+			<?php get_template_part('/inc/lightbox/neutrals'); ?>
+			<div class="pageWidth limitWidth paddedSection">
+				<?php the_field('closing_copy'); ?>
+				<div class="centerText">
+					<a href="http://q0o.1b4.myftpupload.com/wp-content/uploads/2019/10/RPI_SalesFlyer_8_5x11.pdf" target="_blank">
+						<img src="http://q0o.1b4.myftpupload.com/wp-content/uploads/2019/10/RPI-Sales-Flyer-Preview.jpg" class="image" id="flyerPreview">
+					</a>
+				</div>
 			</div>
 		</section>
 	</main>
