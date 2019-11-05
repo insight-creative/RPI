@@ -200,11 +200,6 @@ get_header();
 			</div>
 			<div class="pageWidth limitWidth">
 				<?php the_field('closing_copy'); ?>
-				<div class="centerText">
-					<a href="http://q0o.1b4.myftpupload.com/wp-content/uploads/2019/10/RPI_SalesFlyer_8_5x11.pdf" target="_blank">
-						<img src="http://q0o.1b4.myftpupload.com/wp-content/uploads/2019/10/RPI-Sales-Flyer-Preview.jpg" class="image" id="flyerPreview">
-					</a>
-				</div>
 			</div>
 		</section>
 	</main>

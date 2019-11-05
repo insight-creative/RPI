@@ -11,6 +11,20 @@ $(function() {
         	e.stopPropagation();
     });
 });
+// Disable background scroll when the lightbox is open
+$(function() {
+    $(".perfundo__thumbnail").click(function(e){
+        $(".page").toggleClass("preventScroll");
+        $(".site-header").addClass("scrollUp");
+        	e.stopPropagation();
+    });
+});
+$(function() {
+    $(".perfundo__close").click(function(e){
+        $(".page").toggleClass("preventScroll");
+        	e.stopPropagation();
+    });
+});
 // Hamburger menu animation
 $(function() {
     $(".menuButtonWrap").click(function(e){

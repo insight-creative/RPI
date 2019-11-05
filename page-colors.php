@@ -17,7 +17,8 @@ get_header();
 			<div class="pageWidth limitWidth paddedSection">
 				<?php the_field('color_description'); ?>
 			</div>
-			<?php get_template_part('/inc/lightbox/naturals'); ?>
+			<?php get_template_part('/inc/lightbox/earth'); ?>
+			<?php get_template_part('/inc/lightbox/nature'); ?>
 			<?php get_template_part('/inc/lightbox/vivids'); ?>
 			<?php get_template_part('/inc/lightbox/pastels'); ?>
 			<?php get_template_part('/inc/lightbox/neutrals'); ?>

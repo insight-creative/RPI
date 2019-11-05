@@ -1,4 +1,4 @@
-<div class="paddedSection">
+<div class="paddedBottom">
   <div class="pageWidth centerText">
     <h2>Vivids</h2>
   </div>
@@ -8,7 +8,7 @@
     <a class="perfundo__link" href="#vivid-img1">
       <?php
       $imageID = get_field('vivid_color_1')['ID'];
-      echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+      echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
       ?>
     </a>
     <div id="vivid-img1" class="perfundo__overlay fadeIn">
@@ -32,7 +32,7 @@
   <a class="perfundo__link" href="#vivid-img2">
     <?php
     $imageID = get_field('vivid_color_2')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img2" class="perfundo__overlay fadeIn">
@@ -59,7 +59,7 @@
   <a class="perfundo__link" href="#vivid-img3">
     <?php
     $imageID = get_field('vivid_color_3')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img3" class="perfundo__overlay fadeIn">
@@ -86,7 +86,7 @@
   <a class="perfundo__link" href="#vivid-img4">
     <?php
     $imageID = get_field('vivid_color_4')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img4" class="perfundo__overlay fadeIn">
@@ -113,7 +113,7 @@
   <a class="perfundo__link" href="#vivid-img5">
     <?php
     $imageID = get_field('vivid_color_5')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img5" class="perfundo__overlay fadeIn">
@@ -140,7 +140,7 @@
   <a class="perfundo__link" href="#vivid-img6">
     <?php
     $imageID = get_field('vivid_color_6')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img6" class="perfundo__overlay fadeIn">
@@ -167,7 +167,7 @@
   <a class="perfundo__link" href="#vivid-img7">
     <?php
     $imageID = get_field('vivid_color_7')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img7" class="perfundo__overlay fadeIn">
@@ -194,7 +194,7 @@
   <a class="perfundo__link" href="#vivid-img8">
     <?php
     $imageID = get_field('vivid_color_8')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img8" class="perfundo__overlay fadeIn">
@@ -221,7 +221,7 @@
   <a class="perfundo__link" href="#vivid-img9">
     <?php
     $imageID = get_field('vivid_color_9')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img9" class="perfundo__overlay fadeIn">
@@ -248,7 +248,7 @@
   <a class="perfundo__link" href="#vivid-img10">
     <?php
     $imageID = get_field('vivid_color_10')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img10" class="perfundo__overlay fadeIn">
@@ -275,7 +275,7 @@
   <a class="perfundo__link" href="#vivid-img11">
     <?php
     $imageID = get_field('vivid_color_11')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img11" class="perfundo__overlay fadeIn">
@@ -302,7 +302,7 @@
   <a class="perfundo__link" href="#vivid-img12">
     <?php
     $imageID = get_field('vivid_color_12')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img12" class="perfundo__overlay fadeIn">
@@ -329,7 +329,7 @@
   <a class="perfundo__link" href="#vivid-img13">
     <?php
     $imageID = get_field('vivid_color_13')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img13" class="perfundo__overlay fadeIn">
@@ -356,7 +356,7 @@
   <a class="perfundo__link" href="#vivid-img14">
     <?php
     $imageID = get_field('vivid_color_14')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img14" class="perfundo__overlay fadeIn">
@@ -383,7 +383,7 @@
   <a class="perfundo__link" href="#vivid-img15">
     <?php
     $imageID = get_field('vivid_color_15')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img15" class="perfundo__overlay fadeIn">
@@ -410,7 +410,7 @@
   <a class="perfundo__link" href="#vivid-img16">
     <?php
     $imageID = get_field('vivid_color_16')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img16" class="perfundo__overlay fadeIn">
@@ -437,7 +437,7 @@
   <a class="perfundo__link" href="#vivid-img17">
     <?php
     $imageID = get_field('vivid_color_17')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img17" class="perfundo__overlay fadeIn">
@@ -464,7 +464,7 @@
   <a class="perfundo__link" href="#vivid-img18">
     <?php
     $imageID = get_field('vivid_color_18')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img18" class="perfundo__overlay fadeIn">
@@ -491,7 +491,7 @@
   <a class="perfundo__link" href="#vivid-img19">
     <?php
     $imageID = get_field('vivid_color_19')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img19" class="perfundo__overlay fadeIn">
@@ -518,7 +518,7 @@
   <a class="perfundo__link" href="#vivid-img20">
     <?php
     $imageID = get_field('vivid_color_20')['ID'];
-    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+    echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image perfundo__thumbnail', 'data-sizes' => 'auto' ) );
     ?>
   </a>
   <div id="vivid-img20" class="perfundo__overlay fadeIn">
