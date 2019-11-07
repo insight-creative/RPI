@@ -198,7 +198,7 @@ get_header();
 			    </table>
 				</div>
 			</div>
-			<div class="pageWidth limitWidth">
+			<div class="pageWidth limitWidth centerText">
 				<?php the_field('closing_copy'); ?>
 			</div>
 		</section>

@@ -22,13 +22,8 @@ get_header();
 			<?php get_template_part('/inc/lightbox/vivids'); ?>
 			<?php get_template_part('/inc/lightbox/pastels'); ?>
 			<?php get_template_part('/inc/lightbox/neutrals'); ?>
-			<div class="pageWidth limitWidth paddedSection">
+			<div class="pageWidth limitWidth paddedSection centerText">
 				<?php the_field('closing_copy'); ?>
-				<div class="centerText">
-					<a href="http://q0o.1b4.myftpupload.com/wp-content/uploads/2019/10/RPI_SalesFlyer_8_5x11.pdf" target="_blank">
-						<img src="http://q0o.1b4.myftpupload.com/wp-content/uploads/2019/10/RPI-Sales-Flyer-Preview.jpg" class="image" id="flyerPreview">
-					</a>
-				</div>
 			</div>
 		</section>
 	</main>

@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="col50">
-      <?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true tabindex=49]'); ?>
+      <?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true tabindex=0]'); ?>
     </div>
   </div>
 </section>

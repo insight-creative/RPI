@@ -18,7 +18,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<a class="screenReaderSkipToContent" href="#primary" tabindex="0">Skip to main content</a>
+<a class="screenReaderSkipToContent" href="#intro" tabindex="1">Skip to main content</a>
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
 		<?php get_template_part('/inc/header/site-branding'); ?>

@@ -25,11 +25,12 @@
 	position: relative;
 	top: 0;
 	left: 0;
-	z-index: 999999;
+	z-index: 99999;
 	width: 100vw;
 	-webkit-transition: .3s ease;
 	transition: .3s ease;
 	background-color: $white;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 	@include breakpoint (laptopScreen) {
 		position: fixed;
 	}

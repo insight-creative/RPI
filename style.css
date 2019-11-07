@@ -710,11 +710,12 @@ Font Variables
   position: relative;
   top: 0;
   left: 0;
-  z-index: 999999;
+  z-index: 99999;
   width: 100vw;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
   @media (min-width: 992px) {
     .site-header {
       position: fixed; } }
@@ -1300,6 +1301,9 @@ ul {
   stroke-width: 0;
   stroke: #FFFFFF;
   fill: #FFFFFF; }
+
+.icon-search {
+  cursor: pointer; }
 
 .mediumIcon {
   display: inline-block;
