@@ -25,11 +25,7 @@ get_header();
 					</div>
 					<div class="col50">
 						<div class="blockText">
-							<h2><?php the_field('plant_heading'); ?></h2>
 							<?php the_field('plant_description'); ?>
-							<div class="btnContainer">
-								<a href="/contact/" class="primaryBtn">Contact Us</a>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -100,7 +96,7 @@ get_header();
 				</div>
 				<?php get_template_part('/inc/lightbox/homepage-colors'); ?>
 				<div class="centerBtn smallPaddedSection">
-					<a href="/colors/" class="primaryBtn">Browse our full color gallery</a>
+					<a href="/colors/" class="primaryBtn">Browse Full Color Gallery</a>
 				</div>
 			</section>
 			<section id="business-to-business" class="paddedSection">

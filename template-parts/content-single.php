@@ -22,7 +22,6 @@
 			<?php endif; ?>
 			<div class="centerText">
 				<p>
-					<?php insightCustom_posted_by(); ?><br>
 					in
 						<?php
 						$categories = get_the_category();
@@ -43,4 +42,24 @@
 			<?php the_content(); ?>
 		</div><!-- .entry-content -->
 	</article><!-- #post-<?php the_ID(); ?> -->
+	<?php // related posts based on first cat of current post
+	$cats = get_the_category();
+	if ($cats) {
+		echo '<h3>Other Colors You Might Like</h3>';
+		$first_cat = $cats[0]->term_id;
+		$args = array(
+				'category__in' => array($first_cat),
+				'post__not_in' => array($post->ID),
+				'showposts' => 3, // how many posts?
+				'caller_get_posts' => 1
+				);
+		$my_query = new WP_Query($args);
+	  	if ($my_query->have_posts()) { ?>
+			<ul class="relatedColors wrappedFlexContainer">
+			<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+				<li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a></li>
+			<?php endwhile; ?>
+			</ul>
+		<?php } ?>
+	<?php } ?>
 </div>

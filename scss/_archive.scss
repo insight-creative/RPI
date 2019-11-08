@@ -2,16 +2,12 @@
 16.0 Blog/News Page
 --------------------------------------------------------------*/
 .post{
-  padding: 0 0 20px 0;
-  @include breakpoint(laptopScreen){
-    padding: 0 25px 20px 25px;
+  h2{
+    margin-bottom: 15px;
   }
-    h2{
-      margin-bottom: 15px;
-    }
-    p{
-      margin-top: 15px;
-    }
+  p{
+    margin-top: 15px;
+  }
 }
 .singlePost{
   .entry-title{
@@ -140,154 +136,75 @@
 .attachment-post-thumbnail{
   width: 100%;
   height: auto;
-  margin-bottom: 40px;
-  border-bottom: 5px solid $brandColor;
 }
 .postHeader{
   margin-bottom: 15px;
 }
-#search-2 {
-  background-color: $brandColor;
-  text-align: center;
-  border-radius: 10px;
-  h2 {
-    font-size: 1.6em;
-    font-weight: 700;
-    color: $white;
-  }
-  .searchForm {
-    padding: 0 0 20px 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-}
-#categories-2 {
-  background-color: $lightGrey;
-  margin-top: 25px;
-  .widget-title {
-    text-align: center;
-    font-size: 1.6em;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0 0 20px 20px;
-  }
-}
-.socialOutterWrapper {
-  background-color: $brandColor;
-  margin-top: 25px;
-}
-.searchWrapper, .categoryWrapper, .socialOutterWrapper {
-  border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-}
-.blogSideBar {
-  nav {
-    width: 50%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 auto;
-    a {
-      width: 50px;
-    }
-  }
-  .socialWrapper {
-    img {
-      width: 25px;
-    }
-  }
-}
 .articleWrapper {
+  width: 70%;
+  @include breakpoint (largeMobileScreen) {
+    width: 50%;
+  }
+  @include breakpoint (laptopScreen) {
+    width: 25%;
+  }
   .entry-header {
     display: block;
   }
-  .entry-title {
-    a {
-      &:after {
-        width: 0;
-      }
-    }
-  }
-  .thumbnailWrapper {
-    a {
-      &:after {
-        width: 0;
-      }
-    }
+  .continue-reading {
+    visibility: hidden;
   }
 }
 .postWrapper {
+  a {
+    color: $brandColor;
+    transition: .3s ease;
+    &:hover {
+      color: $black;
+      transition: .3s ease;
+    }
+  }
   .entry-header {
     display: block;
   }
-  .attachment-post-thumbnail {
-    margin-top: 25px;
-    margin-bottom: 25px;
+  .wrappedFlexContainer {
+    justify-content: center;
   }
 }
 .pagination {
   .nav-links {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-#sidebarAffiliations {
-  #affiliations {
-    padding: 0;
-  }
-  #affiliateTitleWrap {
-    width: 100%;
-    margin-top: 25px;
-  }
-  #affiliationsTitle {
-    &:before {
-      width: 0;
-    }
-    &:after {
-      width: 0;
-    }
-  }
-  #affiliateWrapper {
-    img {
-      width: 15%;
-      @include breakpoint (laptopScreen) {
-        width: 40%;
-      }
-      @include breakpoint (extraLargeScreen) {
-        width: 30%;
-      }
-    }
+        justify-content: space-evenly;
   }
 }
 .innerWrap {
   padding: 0 0 20px 0;
 }
-.post-thumbnail {
-  &:after {
-    width: 0%;
-  }
-}
-#search {
-  .entry-header {
-      display: block !important;
-      .entry-title {
-        a {
-          &:after {
-            width: 0%;
-          }
-        }
-      }
-  }
-  .awsm_job_openings, .type-tour, .type-page {
-      padding: 0 25px 20px 25px;
-  }
-  #post-1358 {
-    display: none;
-  }
-}
 .page-header {
   @include breakpoint (laptopScreen) {
     margin-right: 25px;
+  }
+}
+.relatedColors {
+  padding-top: 0;
+  li {
+    list-style-type: none;
+    width: 70%;
+    margin: 5px;
+    @include breakpoint (largeMobileScreen) {
+      width: 30%;
+    }
+    .attachment-post-thumbnail {
+      margin-top: 0;
+      margin-bottom: 0;
+      transition: .4s ease;
+      &:hover {
+  			position: relative;
+  			z-index: 9999;
+  			transform: scale(1.1);
+  			transition: .4s ease;
+  			box-shadow: 2px 2px 10px rgba(0,0,0,.8);
+  		}
+    }
   }
 }

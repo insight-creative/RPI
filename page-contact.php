@@ -30,7 +30,7 @@ get_header();
 								High quality plastic lumber may be our main specialty, but our personalized customer service comes in close second. When you work with RPI, you’ll enjoy the rare experience of dealing directly with company owners and experts with decades of industry experience. Reach out to RPI today to get started!
 							</p>
 							<p>
-								Please keep these ordering guidelines in mind when you contact us…
+								Please keep these ordering guidelines in mind when you contact us …
 							</p>
 							<ul>
 								<li>Less than full skid items are sold in 12' lengths only and subject to availability.</li>
@@ -39,7 +39,7 @@ get_header();
 								<li>Change Order or Repacking Fee Charges will apply to any changes made after original date of order.  Each change prior to shipping will be assessed separately.
 								<li>Orders containing non-stock or limited production items require payment in full at time of order.
 								<li>Non-stock and limited production items are non-returnable and non-refundable.
-								<li>All shipments are F.O.B. Green Bay WI.
+								<li>All shipments are F.O.B. Green Bay, WI.
 							</ul>
 						</div>
 					</div>

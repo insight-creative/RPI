@@ -91,6 +91,23 @@
 }
 #search {
   padding: 0 10px;
+  a {
+    color: $brandColor;
+    transition: .3s ease;
+    &:hover {
+      color: $black;
+      transition: .3s ease;
+    }
+  }
+  article {
+    width: 70%;
+    @include breakpoint (largeMobileScreen) {
+      width: 50%;
+    }
+    @include breakpoint (laptopScreen) {
+      width: 25%;
+    }
+  }
 }
 .searchForm {
 	background-color: $brandColor;

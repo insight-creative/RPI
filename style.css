@@ -1464,15 +1464,10 @@ ul {
 /*--------------------------------------------------------------
 16.0 Blog/News Page
 --------------------------------------------------------------*/
-.post {
-  padding: 0 0 20px 0; }
-  @media (min-width: 992px) {
-    .post {
-      padding: 0 25px 20px 25px; } }
-  .post h2 {
-    margin-bottom: 15px; }
-  .post p {
-    margin-top: 15px; }
+.post h2 {
+  margin-bottom: 15px; }
+.post p {
+  margin-top: 15px; }
 
 .singlePost .entry-title {
   margin-top: 125px; }
@@ -1588,108 +1583,65 @@ ul {
 
 .attachment-post-thumbnail {
   width: 100%;
-  height: auto;
-  margin-bottom: 40px;
-  border-bottom: 5px solid #112671; }
+  height: auto; }
 
 .postHeader {
   margin-bottom: 15px; }
 
-#search-2 {
-  background-color: #112671;
-  text-align: center;
-  border-radius: 10px; }
-  #search-2 h2 {
-    font-size: 1.6em;
-    font-weight: 700;
-    color: #FFFFFF; }
-  #search-2 .searchForm {
-    padding: 0 0 20px 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; }
+.articleWrapper {
+  width: 70%; }
+  @media (min-width: 600px) {
+    .articleWrapper {
+      width: 50%; } }
+  @media (min-width: 992px) {
+    .articleWrapper {
+      width: 25%; } }
+  .articleWrapper .entry-header {
+    display: block; }
+  .articleWrapper .continue-reading {
+    visibility: hidden; }
 
-#categories-2 {
-  background-color: #f6f6f6;
-  margin-top: 25px; }
-  #categories-2 .widget-title {
-    text-align: center;
-    font-size: 1.6em; }
-  #categories-2 ul {
-    list-style-type: none;
-    padding: 0 0 20px 20px; }
-
-.socialOutterWrapper {
-  background-color: #112671;
-  margin-top: 25px; }
-
-.searchWrapper, .categoryWrapper, .socialOutterWrapper {
-  border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); }
-
-.blogSideBar nav {
-  width: 50%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0 auto; }
-  .blogSideBar nav a {
-    width: 50px; }
-.blogSideBar .socialWrapper img {
-  width: 25px; }
-
-.articleWrapper .entry-header {
-  display: block; }
-.articleWrapper .entry-title a:after {
-  width: 0; }
-.articleWrapper .thumbnailWrapper a:after {
-  width: 0; }
-
+.postWrapper a {
+  color: #112671;
+  transition: .3s ease; }
+  .postWrapper a:hover {
+    color: #303030;
+    transition: .3s ease; }
 .postWrapper .entry-header {
   display: block; }
-.postWrapper .attachment-post-thumbnail {
-  margin-top: 25px;
-  margin-bottom: 25px; }
+.postWrapper .wrappedFlexContainer {
+  justify-content: center; }
 
 .pagination .nav-links {
   -ms-flex-pack: distribute;
-  justify-content: space-around; }
-
-#sidebarAffiliations #affiliations {
-  padding: 0; }
-#sidebarAffiliations #affiliateTitleWrap {
-  width: 100%;
-  margin-top: 25px; }
-#sidebarAffiliations #affiliationsTitle:before {
-  width: 0; }
-#sidebarAffiliations #affiliationsTitle:after {
-  width: 0; }
-#sidebarAffiliations #affiliateWrapper img {
-  width: 15%; }
-  @media (min-width: 992px) {
-    #sidebarAffiliations #affiliateWrapper img {
-      width: 40%; } }
-  @media (min-width: 1600px) {
-    #sidebarAffiliations #affiliateWrapper img {
-      width: 30%; } }
+  justify-content: space-evenly; }
 
 .innerWrap {
   padding: 0 0 20px 0; }
 
-.post-thumbnail:after {
-  width: 0%; }
-
-#search .entry-header {
-  display: block !important; }
-  #search .entry-header .entry-title a:after {
-    width: 0%; }
-#search .awsm_job_openings, #search .type-tour, #search .type-page {
-  padding: 0 25px 20px 25px; }
-#search #post-1358 {
-  display: none; }
-
 @media (min-width: 992px) {
   .page-header {
     margin-right: 25px; } }
+
+.relatedColors {
+  padding-top: 0; }
+  .relatedColors li {
+    list-style-type: none;
+    width: 70%;
+    margin: 5px; }
+    @media (min-width: 600px) {
+      .relatedColors li {
+        width: 30%; } }
+    .relatedColors li .attachment-post-thumbnail {
+      margin-top: 0;
+      margin-bottom: 0;
+      transition: .4s ease; }
+      .relatedColors li .attachment-post-thumbnail:hover {
+        position: relative;
+        z-index: 9999;
+        transform: scale(1.1);
+        transition: .4s ease;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); }
 
 /*--------------------------------------------------------------
 23.0 Privacy Policy Page
@@ -1778,6 +1730,20 @@ ul {
 
 #search {
   padding: 0 10px; }
+  #search a {
+    color: #112671;
+    transition: .3s ease; }
+    #search a:hover {
+      color: #303030;
+      transition: .3s ease; }
+  #search article {
+    width: 70%; }
+    @media (min-width: 600px) {
+      #search article {
+        width: 50%; } }
+    @media (min-width: 992px) {
+      #search article {
+        width: 25%; } }
 
 .searchForm {
   background-color: #112671;

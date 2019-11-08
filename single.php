@@ -25,11 +25,6 @@ get_header();
 				</div>
 			</main><!-- #main -->
 		</div><!-- #primary -->
-		<div class="paddedSection greyBorderTop">
-			<?php the_post_navigation(); ?>
-		</div>
 	</div>
-
 <?php
-get_sidebar();
 get_footer();
