@@ -33,11 +33,6 @@ get_header();
 	            <td>1  x 3 1/2</td>
 	            <td>1.01 lbs</td>
 		        </tr>
-		        <tr>
-	            <td>1  x 4</td>
-	            <td>3/4  x 3 1/2</td>
-	            <td>0.76 lbs</td>
-		        </tr>
 						<tr>
 	            <td>1  x 5 1/2</td>
 	            <td>1  x 5 1/2</td>
@@ -102,7 +97,7 @@ get_header();
 						<tr>
 							<td>1/2  x 12 1/8</td>
 							<td>1/2  x 12 1/8</td>
-							<td></td>
+							<td>1.85 lbs</td>
 						</tr>
 		        <tr>
 	            <td>3/4  x 2 1/4 Radius Top</td>
@@ -113,6 +108,11 @@ get_header();
 	            <td>3/4  x 2 5/8</td>
 	            <td>3/4  x 2 5/8</td>
 	            <td>0.57 lbs</td>
+		        </tr>
+						<tr>
+	            <td>1  x 4</td>
+	            <td>3/4  x 3 1/2</td>
+	            <td>0.76 lbs</td>
 		        </tr>
 		        <tr>
 	            <td>1  x 10</td>

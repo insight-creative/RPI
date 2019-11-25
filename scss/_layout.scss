@@ -110,15 +110,6 @@
 	background-position: center;
 	height: 50vh;
 }
-.mediumHero{
-	position: relative;
-	z-index: 1;
-	width: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 80vh;
-}
 .flex-container{
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -150,45 +141,6 @@
           -ms-flex-direction: row;
               flex-direction: row;
     }
-}
-.col-container{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-					margin-bottom: 25px;
-    @include breakpoint(tabletScreen){
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-    }
-}
-.flexWrap {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: baseline;
-	    -ms-flex-align: baseline;
-	        align-items: baseline;
-	@include breakpoint (tabletScreen) {
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-	}
-}
-.flex-center {
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
 }
 .wrappedFlexContainerCenter{
 	display: -webkit-box;

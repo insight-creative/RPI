@@ -25,31 +25,6 @@
   	transition: .3s ease;
   }
 }
-.primaryBtnAlt{
-	position: relative;
-	z-index:1;
-  font-family: $cabin !important;
-	font-weight: 700 !important;
-  font-size: 22px;
-  text-transform: uppercase;
-  text-decoration: none;
-	border: 2px solid $black;
-	background: $black;
-	padding: 10px 25px;
-	color: $white !important;
-	-webkit-transition: .3s ease !important;
-	transition: .3s ease !important;
-	cursor: pointer;
-  white-space: nowrap;
-    &:hover{
-      background: $black;
-			border: 2px solid $black;
-			box-shadow: 0 6px 18px 0 rgba(0,0,0,.5);
-    	-webkit-transition: .3s ease;
-    	transition: .3s ease;
-			color: $white;
-    }
-}
 .plainLink {
 	text-decoration: none;
 	color: $brandColor;

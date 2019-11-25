@@ -15,9 +15,9 @@
 #text{
   display: none;
 }
-.newsPosts{
-  padding-left: 40px;
+#sitemap {
   a{
+    color: $black;
     text-decoration: none;
   	-webkit-transition: .2s ease all;
   	transition: .2s ease all;
@@ -28,6 +28,9 @@
       transition: .2s ease all;
     }
   }
+}
+.newsPosts{
+  padding-left: 40px;
 }
 .pagenav{
   list-style-type: none;
