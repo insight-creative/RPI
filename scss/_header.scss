@@ -83,8 +83,11 @@
 }
 .custom-logo-link {
  img {
-	 width: 150px;
+	 width: 100px;
 	 height: 100%;
+	 @include breakpoint (laptopScreen) {
+		 width: 150px;
+	 }
  }
 }
 .menu-main-menu-container {

@@ -719,8 +719,11 @@ Font Variables
       transform: translateY(-165px); } }
 
 .custom-logo-link img {
-  width: 150px;
+  width: 100px;
   height: 100%; }
+  @media (min-width: 992px) {
+    .custom-logo-link img {
+      width: 150px; } }
 
 .menu-main-menu-container {
   width: 100%;
@@ -968,7 +971,11 @@ nav {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
+  @media (min-width: 600px) {
+    #copyright {
+      flex-direction: row; } }
   #copyright p {
     margin-top: 0;
     margin-bottom: 0 !important; }
@@ -1070,7 +1077,7 @@ p {
   position: relative;
   z-index: 1;
   font-family: "Cabin", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
   border: 2px solid #112671;
@@ -1083,6 +1090,9 @@ p {
   cursor: pointer;
   white-space: nowrap;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4); }
+  @media (min-width: 600px) {
+    .primaryBtn {
+      font-size: 14px; } }
   .primaryBtn:hover {
     background: #FFFFFF;
     color: #112671;
@@ -1149,13 +1159,16 @@ body {
   word-wrap: normal !important; }
 
 ::-moz-selection {
-  background: rgba(182, 174, 140, 0.5); }
+  background: rgba(17, 38, 113, 0.7);
+  color: #FFFFFF; }
 
 ::selection {
-  background: rgba(182, 174, 140, 0.5); }
+  background: rgba(17, 38, 113, 0.7);
+  color: #FFFFFF; }
 
 ::-ms-selection {
-  background: rgba(182, 174, 140, 0.5); }
+  background: rgba(17, 38, 113, 0.7);
+  color: #FFFFFF; }
 
 @media (max-width: 599px) {
   #privacyPolicy {
@@ -1692,7 +1705,7 @@ ul {
       width: 15%; } }
   .colorGrid .perfundo img {
     width: 100%;
-    height: auto; }
+    height: 100%; }
 
 .colorGrid .column {
   width: 45%;
@@ -1854,13 +1867,5 @@ ul {
   .table tbody td {
     display: block;
     text-align: center; } }
-#flyerPreview {
-  width: 90%; }
-  @media (min-width: 768px) {
-    #flyerPreview {
-      width: 50%; } }
-  @media (min-width: 992px) {
-    #flyerPreview {
-      width: 30%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,13 +20,16 @@ body{
 }
 // Style highlight to match our themes colors
 ::-moz-selection{
-		background: rgba( 182, 174, 140, .5);
+		background: rgba(17, 38, 113, .7);
+		color: $white;
 }
 ::selection{
-		background: rgba( 182, 174, 140, .5);
+		background: rgba(17, 38, 113, .7);
+		color: $white;
 }
 ::-ms-selection{
-	background: rgba( 182, 174, 140, .5);
+	background: rgba(17, 38, 113, .7);
+	color: $white;
 }
 #privacyPolicy{
 	@include breakpoint(smallScreen){

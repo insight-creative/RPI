@@ -39,8 +39,12 @@
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+	flex-direction: column;
+	@include breakpoint (largeMobileScreen) {
+		flex-direction: row;
+	}
 		p{
 			margin-top: 0;
 			margin-bottom: 0 !important;
