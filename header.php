@@ -12,13 +12,13 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link href="/wp-content/uploads/2019/03/favicon.png" rel="shortcut icon">
-	<link rel="stylesheet" href="/wp-content/themes/insightcustom/css/perfundo.min.css">
+	<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png" rel="shortcut icon">
+	<!-- <link rel="stylesheet" href="/wp-content/themes/insightcustom/assets/css/perfundo.min.css"> -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<a class="screenReaderSkipToContent" href="#intro" tabindex="1">Skip to main content</a>
+<a class="screenReaderSkipToContent" href="#main-content">Skip to main content</a>
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
 		<?php get_template_part('/inc/header/site-branding'); ?>

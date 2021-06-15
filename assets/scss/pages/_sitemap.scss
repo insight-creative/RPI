@@ -1,0 +1,35 @@
+#sitemapEntry {
+	@include breakpoint(smallScreen) {
+		margin-top: 75px;
+	}
+	@include breakpoint(largeMobileScreen) {
+		margin-top: 75px;
+	}
+	@include breakpoint(laptopScreen) {
+		margin-top: 150px;
+	}
+}
+#text {
+	display: none;
+}
+#sitemap {
+	a {
+		color: $black;
+		text-decoration: none;
+		transition: 0.2s ease all;
+		position: relative;
+		&:hover {
+			color: $brandColor;
+			transition: 0.2s ease all;
+		}
+	}
+}
+.newsPosts {
+	padding-left: 40px;
+}
+.pagenav {
+	list-style-type: none;
+	ul {
+		padding-left: 40px;
+	}
+}

@@ -183,19 +183,29 @@ function my_acf_admin_head() {
     <?php
 }
 add_action('acf/input/admin_head', 'my_acf_admin_head');
+
 /*********************************************************
-Enqueue scripts and styles
+Enqueue scripts
 *********************************************************/
 function insightcustom_scripts() {
-	wp_enqueue_style( 'insightcustom-style', get_stylesheet_uri() );
-	wp_enqueue_script( 'insightcustom-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-	wp_enqueue_script( 'insightcustom-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-	wp_enqueue_script('customJS', get_stylesheet_directory_uri() . '/js/customJS.js');
+	wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/assets/js/custom.min.js', ['jquery'], '1.0.0', true);
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'insightcustom_scripts' );
+/*********************************************************
+Enqueue styles
+*********************************************************/
+function insightcustom_styles() {
+	wp_enqueue_style( 'insightcustom-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'insight-custom-style', get_stylesheet_directory_uri() . '/assets/css/style.min.css');
+}
+add_action( 'wp_enqueue_scripts', 'insightcustom_styles' );
+/*********************************************************
+Custom post types
+*********************************************************/
+require get_template_directory() . '/inc/custom-post-types.php';
 /*********************************************************
 Custom template tags for this theme
 *********************************************************/

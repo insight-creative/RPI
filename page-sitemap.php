@@ -1,29 +1,28 @@
 <?php
 /**
+ * The template for displaying all pages
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
  * @package InsightCustom
  */
+
 get_header();
 ?>
 <div id="primary" class="content-area">
-	<main id="main" class="site-main">
-		<section id="sitemapEntry">
-			<div class="pageWidth">
-				<h1 class="primaryText">Sitemap</h1>
+	<main id="main-content" class="site-main" role="main">
+		<section class="paddedSection">
+			<div class="pageWidth limitWidth">
+			<h3>Pages</h3>
+				<?php wp_list_pages(array('sort_column' => 'post_title', 'exclude' => '1057,1030,2183', 'title_li' => ' ', 'depth' => 0)); ?>
 			</div>
 		</section>
-		<div id="sitemap" class="pageWidth">
-			<div class="flex-container">
-				<div class="col50">
-					<h3>Pages</h3>
-						<?php wp_list_pages(array('sort_column' => 'post_title', 'exclude' => '419,817,421', 'title_li' => ' ', 'depth' => 0)); ?>
-					<h3>Colors</h3>
-					<ul class="newsPosts">
-						<?php wp_get_archives('type=alpha'); ?>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</main>
-</div>
+	</main><!-- #main -->
+</div><!-- #primary -->
 <?php
 get_footer();

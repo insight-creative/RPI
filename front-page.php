@@ -6,7 +6,7 @@ get_header();
 
 ?>
 <div id="primary" class="content-area">
-	<main id="home" class="site-main">
+	<main id="main-content" class="site-main" role="main">
 		<section id="homeHero">
 			<script src="https://fast.wistia.com/embed/medias/mh5tyrh8im.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_mh5tyrh8im videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
 		</section>

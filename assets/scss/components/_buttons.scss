@@ -1,0 +1,54 @@
+.primaryBtn {
+	font-family: $cabin;
+	font-weight: 700;
+	text-decoration: none;
+	border: 2px solid $brandColor;
+	border-radius: 10px;
+	background: $brandColor;
+	padding: 5px 25px 5px 25px;
+	color: $white;
+	transition: 0.3s ease;
+	cursor: pointer;
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+	display: inline-block;
+	&:hover,
+	&:focus {
+		background: $white;
+		color: $brandColor;
+		transition: 0.3s ease;
+	}
+}
+.plainLink {
+	color: $brandColor;
+	font-weight: 700;
+	transition: 0.2s ease;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+.centerButton {
+	margin: 0 auto;
+	text-align: center;
+}
+button {
+	background-color: $transparent;
+	border: none;
+}
+.btnContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-direction: column;
+	margin-bottom: 25px;
+	@include breakpoint(largeMobileScreen) {
+		flex-direction: row;
+	}
+}
+.noDecoration {
+	&:after {
+		width: 0;
+	}
+}

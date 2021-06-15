@@ -1,0 +1,46 @@
+#homeHero {
+	position: relative;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+	@include breakpoint(laptopScreen) {
+		position: fixed;
+		top: 0;
+		height: 55vh;
+	}
+	@include breakpoint(largeScreen) {
+		top: -10%;
+	}
+}
+#homeContent {
+	background-color: $white;
+	z-index: 1;
+	position: relative;
+	@include breakpoint(laptopScreen) {
+		margin-top: 60vh;
+	}
+}
+.heroTitle {
+	padding: 30px 0;
+}
+#colors {
+	h4 {
+		padding: 100px 0;
+		text-shadow: 3px 3px 5px $black;
+	}
+}
+.benefitItem {
+	width: 40%;
+	font-weight: 700;
+	text-align: center;
+	padding-left: 20px;
+	@include breakpoint(tabletScreen) {
+		width: 25%;
+	}
+	@include breakpoint(laptopScreen) {
+		width: 20%;
+	}
+	img {
+		max-width: 125px;
+	}
+}

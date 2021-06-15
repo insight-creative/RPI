@@ -9,7 +9,7 @@ get_header();
 
 ?>
 <div id="primary" class="content-area">
-	<main id="contact" class="site-main">
+	<main id="main-content" class="site-main" role="main">
 		<section id ="contactContent">
 			<div id="contactWrap">
 				<div class="pageWidth flex-container">
@@ -17,7 +17,7 @@ get_header();
 						<div id="formWrapInner">
 							<h1 class="noMargin">Let’s get Started</h1>
 							<div class="underline"></div>
-							<img src="http://q0o.1b4.myftpupload.com/wp-content/uploads/2019/10/final-product-on-forklift-low.jpg" class="image" alt="Group photo of the Fox Structures Team on Owners">
+							<img src="/wp-content/uploads/2019/10/final-product-on-forklift-low.jpg" class="image" alt="Group photo of the Fox Structures Team on Owners">
 							<h2 class="noMargin">RPI, Inc.</h2>
 							<div class="underline"></div>
 							<p>
@@ -48,7 +48,7 @@ get_header();
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.451366228876!2d-88.08733868447571!3d44.4649199791019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802fbfb8a12b047%3A0xa20843e8d5ac74bd!2sRecycled%20Plastics%20Industries!5e0!3m2!1sen!2sus!4v1570452574563!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 						</div>
 						<div class="formWrapper">
-							<?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true tabindex=49]'); ?>
+							<?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true]'); ?>
 						</div>
 					</div>
 				</div>

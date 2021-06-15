@@ -1,0 +1,35 @@
+.careers-grid {
+	display: grid;
+	gap: 1rem;
+}
+.careers-card {
+	padding: 1rem;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: 0.3s ease;
+	color: $brandColor;
+	border-bottom: 1px solid $brandColor;
+	@include breakpoint(laptopScreen) {
+		flex-direction: row;
+	}
+	&__more {
+		display: flex;
+		align-items: center;
+		svg {
+			width: 16px;
+			fill: $brandColor;
+			margin-left: 5px;
+			transition: 0.3s ease;
+		}
+	}
+	&:hover,
+	&:focus {
+		.careers-card__more {
+			svg {
+				transform: translateX(5px);
+			}
+		}
+	}
+}

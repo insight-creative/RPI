@@ -5,7 +5,7 @@
 get_header();
 ?>
 <div id="primary" class="content-area">
-	<main class="site-main">
+	<main id="main-content" class="site-main" role="main">
 		<section id="profilesHero">
 			<div class="hero" style="background-image: url('<?php echo the_field('hero_shot'); ?>')"></div>
 		</section>

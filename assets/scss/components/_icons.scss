@@ -1,0 +1,45 @@
+.smallIcon {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+.icon {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	stroke-width: 0;
+	stroke: $white;
+	fill: $white;
+}
+.icon-search {
+	cursor: pointer;
+}
+.mediumIcon {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	stroke-width: 0;
+	stroke: $white;
+	fill: $white;
+}
+.largeArrow {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	stroke-width: 0;
+	stroke: $white;
+	fill: $white;
+	@include breakpoint(tabletScreen) {
+		width: 50px;
+		height: 50px;
+	}
+}
+.mediumBlackIcon {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	stroke-width: 0;
+	stroke: $black;
+	fill: $black;
+}

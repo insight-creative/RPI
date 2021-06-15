@@ -6,7 +6,7 @@ get_header();
 
 ?>
 <div id="primary" class="content-area">
-	<main id="main" class="site-main">
+	<main id="main-content" class="site-main" role="main">
 		<section id="privacyPolicy">
 		  <div class="pageWidth">
 	      <div>
